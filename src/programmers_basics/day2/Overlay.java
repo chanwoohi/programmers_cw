@@ -1,4 +1,4 @@
-package day2;
+package programmers_basics.day2;
 
 public class Overlay {
 
