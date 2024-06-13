@@ -1,4 +1,4 @@
-package programmers_basics.day1;
+package programmers_basics;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class AlphabetChanger {
             if(Character.isUpperCase(c)){
                 answer += Character.toLowerCase(c);
             }else{
-                answer += Character.toUpperCase(c);
+                answer += Character.isUpperCase(c);
             }
         }
        System.out.println(answer);
