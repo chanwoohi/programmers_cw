@@ -5,14 +5,15 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-		int[] numbers = {1, 2, 100, -99, 1, 2, 3 };
-		int[] answer = new int [numbers.length];
-		
-        for(int i = 0 ; i < numbers.length ; i++) {
-        	answer[i] = numbers[i]*2;
-        }
+		int n = 11;
+		int[] answer = new int[n/2];
+		for(int i = 1; i <= n ; i++) {
+			if(i % 2 != 0) {
+				answer[(int)(i/2)] = i;
+			}
+		}
 		System.out.println(Arrays.toString(answer));
 	}
-	
+
 
 }
