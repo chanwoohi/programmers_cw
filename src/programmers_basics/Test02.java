@@ -5,18 +5,44 @@ import java.util.Arrays;
 public class Test02 {
 
 	public static void main(String[] args) {
-		int n = 11;
-		int[] answer = {};
-		if( n % 2 == 0) {
-			answer = new int [n / 2];
+		String ineq = "<", eq = "=";
+		int n = 20, m = 50;
+		int answer = 0;
+		if ( ineq == "<" ){
+			if(eq == "=") {
+				if(n <= m) {
+					answer = 1; 
+				}
+				else {
+					answer = 0;
+				}
+			}
+			else {
+				if(n < m) {
+					answer = 1; 
+				}
+				else {
+					answer = 0;
+				}
+			}
 		}
 		else {
-		answer = new int [(n + 1) / 2];
+			if(eq == "=") {
+			}
+			if(n >= m) {
+				answer = 1; 
+			}
+			else {
+				answer = 0;
+			}
+			if(n > m) {
+				answer = 1; 
+			}
+			else {
+				answer = 0;
+			}
 		}
-		for(int i = 0 ; i < answer.length ; i++) {
-			answer[i] = (i * 2) + 1;
-		}
-		System.out.println(Arrays.toString(answer));
+		System.out.println(answer);
 	}
 
 }
