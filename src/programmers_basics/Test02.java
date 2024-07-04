@@ -5,10 +5,40 @@ import java.util.Arrays;
 public class Test02 {
 
 	public static void main(String[] args) {
-		int n = 2;
-		for(int i = 1 ; i <= 10 ; i++) {
-        	n *= 2;
-        }
-	}
+		int hp = 23;
+		int answer = 0;
+		int c = 5;
+		int a = 3;
+		int b = 1;
 
+		for(;;) {
+			if((hp -= c) > 0) {
+				answer++;
+				
+			} else {
+				hp +=c;
+				break;
+			}
+		}
+		for(;;) {
+			if((hp -= a) > 0) {
+				answer++;
+				
+			} else {
+				hp +=c;
+				break;
+			}
+		}
+		for(;;) {
+			if(hp - b != 0) {
+				answer++;
+				
+			} else {
+				break;
+			}
+		}
+		System.out.println(answer);
+	}
 }
+
+
